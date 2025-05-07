@@ -5,8 +5,9 @@ int element[10];
 int nPanjang;
 int x;
 
+// Menginputkan jumlah dan elemen pada array
 void input(){
-    while (true)    {
+    while (true){
         cout << "Masukkan banyaknya elemen pada array (Maksimal 10)";
         cin >> nPanjang;
         if (nPanjang <= 10){
@@ -26,6 +27,7 @@ void input(){
     }
 }
 
+//Mengurutkan terlebih arrat terlebih dahulu
 void bubbleSortArray(){
     int pass = 1;
     do{
@@ -40,6 +42,7 @@ void bubbleSortArray(){
     }while (pass <= nPanjang - 1);
 }
 
+// Menampilkan array setelah diurutkan
 void display (){
     cout << "\n =========================================\n";
     cout << "       Elemen Array Setelah Diurutkan       \n";
@@ -53,6 +56,7 @@ void display (){
     cout << endl;
 }
 
+// Melakukan Pencarian menggunakan Binary Search
 void binarySearch(){
     char ulang;
     do{
@@ -87,6 +91,7 @@ void binarySearch(){
     }while (ulang == 'y' || ulang == 'Y');
 }
 
+// Menampilkan Hasil
 int main(){
     input();
     bubbleSortArray();
